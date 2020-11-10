@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.OTPActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.app.lawyer.customview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="40dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher_round" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+
+                    android:background="@mipmap/blue"
+                    android:orientation="vertical">
+
+                    <com.app.lawyer.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/english"
+                        android:textColor="#4A4A4A"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:edittextfont="OpenSans-Bold.ttf" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/english"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+
+                    android:layout_marginLeft="5dp"
+
+                    android:background="@mipmap/blue"
+                    android:orientation="vertical">
+
+                    <com.app.lawyer.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/arabic"
+                        android:textColor="#4A4A4A"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:edittextfont="OpenSans-Bold.ttf" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/arabi"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.app.lawyer.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:text="@string/msg_code"
+
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:edittextfont="OpenSans-Regular.ttf" />
+
+
+            <com.app.lawyer.customview.CustomEditText
+                android:id="@+id/edt_otp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/edt_box"
+                android:hint="@string/code"
+                android:inputType="text"
+                android:maxLength="5"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="16sp"
+                app:edittextfont="OpenSans-Regular.ttf"
+                app:edittextfontHint="OpenSans-Regular.ttf"
+                />
+
+            <com.app.lawyer.customview.CustomTextView
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/btn_gray"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/btn_color"
+                android:textSize="16sp"
+                app:edittextfont="OpenSans-Regular.ttf" />
+
+            <com.app.lawyer.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/msg_info"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:edittextfont="OpenSans-Bold.ttf" />
+
+            <com.app.lawyer.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/msg_info2"
+                android:textColor="@color/black"
+
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:edittextfont="OpenSans-Bold.ttf" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ClientCaseHearingDateActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar_default"/>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <com.app.lawyer.customview.CustomTextView
+                android:id="@+id/txt_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="Date"
+                android:textColor="@color/black"
+android:gravity="center"
+                android:textSize="14sp"
+                app:edittextfont="OpenSans-Bold.ttf" />
+
+            <com.app.lawyer.customview.CustomTextView
+                android:id="@+id/txt_judgement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+android:gravity="center"
+                android:text="@string/judgment"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:edittextfont="OpenSans-Bold.ttf" />
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_view"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

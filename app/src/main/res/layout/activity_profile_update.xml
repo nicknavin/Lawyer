@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".activity.LoginActivity">
+    <include layout="@layout/toolbar_default"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_centerInParent="true"
+        android:scrollbars="none"
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+
+
+
+            <com.app.lawyer.customview.CircleImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+
+                android:src="@mipmap/profile_pic"
+                app:border_color="@color/colorAccent"
+                app:border_width="1dp" />
+
+            <com.app.lawyer.customview.CustomEditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/edt_box"
+
+                android:gravity="center|left"
+                android:hint="@string/hint_email"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:edittextfont="OpenSans-Regular.ttf"
+                app:edittextfontHint="OpenSans-Regular.ttf" />
+
+            <com.app.lawyer.customview.CustomEditText
+                android:id="@+id/edt_contact"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/horizantal_orange_line"
+                android:gravity="center|left"
+                android:hint="@string/hint_contact"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:edittextfont="OpenSans-Regular.ttf"
+                app:edittextfontHint="OpenSans-Regular.ttf" />
+
+            <com.app.lawyer.customview.CustomEditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edt_box"
+                android:padding="10dp"
+                android:gravity="center|left"
+                android:hint="@string/hint_name"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp"
+                app:edittextfont="OpenSans-Regular.ttf"
+                app:edittextfontHint="OpenSans-Regular.ttf" />
+
+
+            <com.app.lawyer.customview.CustomTextView
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btn_gray"
+                android:gravity="center"
+                android:text="@string/update"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:edittextfont="OpenSans-Regular.ttf" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="sdfsdafsadfsadfsadf"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="5dp"
+
+        android:visibility="gone"
+        android:background="#aaaaaa"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/txtNo"
+            style="@style/FlatWaveColorButtonRippleStyle1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/square_green"
+            android:gravity="center"
+            android:text="NO"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+             />
+
+        <TextView
+            android:id="@+id/txtYes"
+            style="@style/FlatWaveColorButtonRippleStyle1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/square_blue"
+            android:gravity="center"
+            android:text="YES"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

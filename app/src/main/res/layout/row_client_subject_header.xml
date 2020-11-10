@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/edt_box"
+        android:orientation="horizontal">
+    <com.app.lawyer.customview.CustomTextView
+        android:id="@+id/txt_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Case Client Subject Name"
+        android:singleLine="true"
+        android:textSize="16sp"
+        app:edittextfont="OpenSans-Bold.ttf" />
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/add" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lay_progress"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+
+
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_progres_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/date"
+            android:textColor="@color/black"
+            />
+
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_court_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/court"
+            android:textColor="@color/black" />
+
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_building"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/building"
+            android:textColor="@color/black" />
+
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_judgement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/judgment"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray"></View>
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.HearingSessionCreateFormActivity">
+
+    <include layout="@layout/toolbar_default" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_box"
+            android:hint="@string/date"
+            android:gravity="center|left"
+            android:imeOptions="actionNext"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/txt_header"
+            android:textColorHint="@color/gray"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf"
+            app:edittextfontHint="OpenSans-Regular.ttf" />
+        <Spinner
+            android:id="@+id/spinner_level"
+            style="@style/SpinnerTheme"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:popupBackground="@drawable/case_box"
+            android:layout_marginTop="10dp"
+            android:elevation="0dp"
+            android:entries="@array/judgment_str"
+
+
+            android:popupElevation="0dp"
+            android:spinnerMode="dropdown"
+
+            />
+
+        <Spinner
+            android:id="@+id/spinner_level_type"
+            style="@style/SpinnerTheme"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:elevation="0dp"
+            android:entries="@array/judgment_str"
+
+            android:popupBackground="@drawable/case_box"
+            android:popupElevation="0dp"
+            android:spinnerMode="dropdown"
+
+            />
+
+        <Spinner
+            android:id="@+id/spinner_court"
+            style="@style/SpinnerTheme"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:elevation="0dp"
+            android:entries="@array/judgment_str"
+
+            android:popupBackground="@drawable/case_box"
+            android:popupElevation="0dp"
+            android:spinnerMode="dropdown"
+
+            />
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_court_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edt_box"
+            android:hint="@string/court_time"
+            android:gravity="center|left"
+            android:imeOptions="actionNext"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/txt_header"
+            android:textColorHint="@color/gray"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf"
+            app:edittextfontHint="OpenSans-Regular.ttf" />
+        <com.app.lawyer.customview.CustomEditText
+
+            android:id="@+id/edt_floor_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edt_box"
+            android:hint="@string/floor_no"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/txt_header"
+            android:textColorHint="@color/gray"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf"
+            app:edittextfontHint="OpenSans-Regular.ttf" />
+        <com.app.lawyer.customview.CustomEditText
+
+            android:id="@+id/edt_room_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edt_box"
+            android:hint="@string/room_no"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/txt_header"
+            android:textColorHint="@color/gray"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf"
+            app:edittextfontHint="OpenSans-Regular.ttf" />
+
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+
+            android:background="@drawable/btn_gray"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_color"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

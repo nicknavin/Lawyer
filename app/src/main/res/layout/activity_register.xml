@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/circle">
+
+                <com.app.lawyer.customview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_launcher_round" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <com.app.lawyer.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="@string/msg_login1"
+
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:edittextfont="OpenSans-Regular.ttf" />
+
+            <com.app.lawyer.customview.CustomEditText
+                android:id="@+id/edt_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edt_box"
+                android:drawableLeft="@mipmap/user_icon"
+                android:drawablePadding="5dp"
+                android:hint="@string/user_name"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="16sp"
+                app:edittextfontHint="OpenSans-Regular.ttf"
+                app:edittextfont="OpenSans-Regular.ttf" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <com.app.lawyer.customview.CustomEditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edt_box"
+                    android:drawableLeft="@mipmap/user_lock"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/user_pwd"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp"
+
+                    app:edittextfontHint="OpenSans-Regular.ttf"
+                    app:edittextfont="OpenSans-Regular.ttf" />
+
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+
+                    android:button="@drawable/eye_toggle"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <com.app.lawyer.customview.CustomEditText
+                    android:id="@+id/edt_password_cnfm"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edt_box"
+                    android:drawableLeft="@mipmap/user_lock"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/user_pwd_cnfm_new"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text=""
+                    app:edittextfontHint="OpenSans-Regular.ttf"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp"
+                    app:edittextfont="OpenSans-Regular.ttf" />
+
+                <CheckBox
+                    android:id="@+id/checkbox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:button="@drawable/eye_toggle"
+                    android:gravity="center" />
+            </RelativeLayout>
+
+            <com.app.lawyer.customview.CustomTextView
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/btn_gray"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_color"
+                android:textSize="16sp"
+                app:edittextfont="OpenSans-Regular.ttf" />
+
+            <com.app.lawyer.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/or"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+android:visibility="gone"
+                app:edittextfont="OpenSans-Regular.ttf" />
+
+            <com.app.lawyer.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/msg_register1"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:edittextfont="OpenSans-Regular.ttf" />
+
+            <com.app.lawyer.customview.CustomTextView
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:visibility="gone"
+
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_gray"
+                android:text="@string/go_to_login"
+                android:textAllCaps="false"
+                app:edittextfont="OpenSans-Regular.ttf"
+                android:textColor="@color/btn_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

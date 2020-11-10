@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CaseDetailActivity">
+
+    <include layout="@layout/toolbar_default"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout_favourite"
+            style="@style/Widget.Design.TabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:tabBackground="@drawable/selector_tab_indicator"
+            app:tabGravity="fill"
+
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="fixed" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager_favourite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+
+</LinearLayout>

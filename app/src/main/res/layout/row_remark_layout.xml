@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:paddingRight="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content">
+    <com.app.lawyer.customview.CircleImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/profile_icon"
+        android:layout_alignParentLeft="true"
+        android:tint="#dddddd"
+
+        android:id="@+id/imgProfile"/>
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgProfile"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/background_left">
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hello"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+
+
+            android:maxWidth="260dp"
+            android:textColor="#767676"
+            app:edittextfont="HelveticaNeueMed.ttf"
+            android:textStyle="normal"
+
+            android:letterSpacing="0.04"
+            android:lineSpacingExtra="3sp"
+            android:paddingStart="9dp"
+            android:paddingLeft="9dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="9dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="3dp"
+            android:layout_gravity="left"
+            />
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hello"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+
+
+            android:maxWidth="260dp"
+            android:textColor="#767676"
+            app:edittextfont="HelveticaNeueMed.ttf"
+            android:textStyle="normal"
+
+            android:letterSpacing="0.04"
+            android:lineSpacingExtra="3sp"
+            android:paddingStart="9dp"
+            android:paddingLeft="9dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="9dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="7dp"
+            android:layout_gravity="left"
+            />
+
+
+    </LinearLayout>
+    <com.app.lawyer.customview.CustomTextView
+        android:id="@+id/textMSgTime"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="15:50"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:textColor="#767676"
+        android:layout_toRightOf="@+id/lay"
+        app:edittextfont="HelveticaNeueMed.ttf"   />
+</RelativeLayout>

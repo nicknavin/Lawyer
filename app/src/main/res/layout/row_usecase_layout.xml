@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/lay_hearingstaff"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginTop="5dp">
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:text="@string/code"/>
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_subject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_weight="4"
+            android:text="@string/subject"/>
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_client"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_weight="4"
+            android:text="@string/client"/>
+    </LinearLayout>
+</LinearLayout>

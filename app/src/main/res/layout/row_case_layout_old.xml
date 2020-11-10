@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/client_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Case Client Name"
+            android:textColor="@color/black"
+
+            android:textSize="14sp"
+            app:edittextfont="OpenSans-Regular.ttf" />
+
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_case_opponent_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Case Opponent Name"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:edittextfont="OpenSans-Regular.ttf" />
+
+
+
+
+
+
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_progres_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:text="Progres Description"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:edittextfont="OpenSans-Regular.ttf" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:weightSum="6">
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_case_code"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Progres Date"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:edittextfont="OpenSans-Regular.ttf" />
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_case_subject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:layout_marginTop="5dp"
+            android:text="Case Subject"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:edittextfont="OpenSans-Regular.ttf" />
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_court_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginTop="5dp"
+            android:text="Court Name"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:edittextfont="OpenSans-Regular.ttf" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray">
+
+    </View>
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    card_view:cardBackgroundColor="#E6E6E6"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgAttachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:maxHeight="250dp"
+android:layout_margin="10dp"
+            android:src="@mipmap/placeholder" />
+
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txtDocumentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="dsfaf"
+            android:textColor="@color/txt_header"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Bold.ttf" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

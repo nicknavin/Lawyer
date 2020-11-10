@@ -1,0 +1,294 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navdrawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#f4f4f4"
+            android:clickable="true"
+            android:orientation="vertical">
+
+
+            <com.app.lawyer.customview.CircleImageView
+                android:id="@+id/drawer_prof_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="10dp"
+
+                android:layout_marginBottom="10dp"
+
+                android:src="@drawable/amanrow_icons"
+                app:border_color="@color/white"
+                app:border_overlay="true"
+                app:border_width="2dp" />
+            <!--</RelativeLayout>-->
+
+            <com.app.lawyer.customview.CustomTextView
+                android:id="@+id/tv_DrawerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Morcus Potter"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:edittextfont="OpenSans-Bold.ttf" />
+
+            <com.app.lawyer.customview.CustomTextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+
+                android:text="morcus.potter@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:edittextfont="OpenSans-Regular.ttf" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lay_header"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+
+                android:orientation="vertical">
+
+                <com.app.lawyer.customview.CustomTextView
+                    android:id="@+id/drawer_btn_client_cases"
+                    style="@style/ButtonRippleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/Cases"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:edittextfont="OpenSans-Regular.ttf"
+                    app:edittextfontHint="OpenSans-Bold.ttf" />
+
+                <com.app.lawyer.customview.CustomTextView
+                    android:id="@+id/drawer_btn_myRoll"
+                    style="@style/ButtonRippleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/menu_roll"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:edittextfont="OpenSans-Regular.ttf"
+                    app:edittextfontHint="OpenSans-Bold.ttf" />
+
+                <com.app.lawyer.customview.CustomTextView
+                    android:id="@+id/drawer_btn_hearing_staff"
+                    style="@style/ButtonRippleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/menu_hearing_staff"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:edittextfont="OpenSans-Regular.ttf"
+                    app:edittextfontHint="OpenSans-Bold.ttf" />
+
+                <com.app.lawyer.customview.CustomTextView
+                    android:id="@+id/drawer_lang_setting"
+                    style="@style/ButtonRippleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/colorPrimary"
+
+                    android:textSize="16sp"
+                    android:visibility="gone"
+
+                    app:edittextfont="OPENSANS_BOLD.ttf" />
+
+
+                <com.app.lawyer.customview.CustomTextView
+                    android:id="@+id/drawer_specification"
+                    style="@style/ButtonRippleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+
+                    app:edittextfont="OPENSANS_BOLD.ttf" />
+
+
+                <com.app.lawyer.customview.CustomTextView
+                    android:id="@+id/drawer_btn_clinic"
+                    style="@style/ButtonRippleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/colorPrimary"
+
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    app:edittextfont="OPENSANS_BOLD.ttf" />
+
+
+                <com.app.lawyer.customview.CustomTextView
+                    android:id="@+id/drawer_Profile"
+                    style="@style/ButtonRippleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/menu_profile"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:edittextfont="OPENSANS_BOLD.ttf" />
+
+                <com.app.lawyer.customview.CustomTextView
+                    android:id="@+id/drawer_change_pwd"
+                    style="@style/ButtonRippleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/menu_change_pwd"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:edittextfont="OPENSANS_BOLD.ttf" />
+
+
+                <com.app.lawyer.customview.CustomTextView
+                    android:id="@+id/drawerSetting"
+                    style="@style/ButtonRippleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/action_settings"
+
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:edittextfont="OPENSANS_BOLD.ttf" />
+
+
+                <com.app.lawyer.customview.CustomTextView
+                    android:id="@+id/drawer_feedback"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/menu_feedback"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:edittextfont="OPENSANS_BOLD.ttf" />
+
+
+                <com.app.lawyer.customview.CustomTextView
+                    android:id="@+id/drawer_invite_friends"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawablePadding="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/menu_share"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:edittextfont="OPENSANS_BOLD.ttf" />
+
+
+                <com.app.lawyer.customview.CustomTextView
+                    android:id="@+id/drawer_customer_care"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/menu_customercare"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:edittextfont="OPENSANS_BOLD.ttf" />
+
+
+                <com.app.lawyer.customview.CustomTextView
+                    android:id="@+id/drawer_logout"
+                    style="@style/ButtonRippleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/logout"
+
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:edittextfont="OPENSANS_BOLD.ttf" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

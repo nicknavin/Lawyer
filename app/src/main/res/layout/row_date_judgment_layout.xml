@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/half_box"
+
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:id="@+id/lay_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="Date"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:edittextfont="OpenSans-Regular.ttf" />
+
+      <ImageView
+          android:layout_width="0dp"
+          android:layout_weight="0.2"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+
+          android:src="@mipmap/line_icon"></ImageView>
+
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/txt_judgement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.8"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:text="@string/judgment"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:edittextfont="OpenSans-Regular.ttf" />
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="2dp"
+            android:src="@mipmap/add" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

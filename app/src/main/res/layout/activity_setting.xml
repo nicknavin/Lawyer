@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_default"></include>
+
+    <com.app.lawyer.customview.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.app.lawyer.customview.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/langSetting"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:edittextfont="FuturaNDSCOsF_Bold.ttf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/tvEngish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:text="@string/english"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+
+
+            app:edittextfont="GalanoClassic_SemiBold.ttf" />
+        <CheckBox
+            android:id="@+id/checkEnglish"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/location_toggle"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/gray"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.app.lawyer.customview.CustomTextView
+            android:id="@+id/tvArab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+
+
+            android:text="@string/arabic"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            app:edittextfont="GalanoClassic_SemiBold.ttf" />
+        <CheckBox
+            android:id="@+id/checkArab"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/location_toggle"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</LinearLayout>
