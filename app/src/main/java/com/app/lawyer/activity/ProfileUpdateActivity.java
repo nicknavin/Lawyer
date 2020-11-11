@@ -39,6 +39,8 @@ import com.app.lawyer.utility.ConvetBitmap;
 import com.app.lawyer.utility.DataPrefrence;
 import com.app.lawyer.utility.PermissionsUtils;
 import com.app.lawyer.utility.Utility;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.squareup.picasso.MemoryPolicy;
 import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
@@ -109,8 +111,16 @@ public class ProfileUpdateActivity extends BaseActivity implements View.OnClickL
         if(!DataPrefrence.getPref(context, Constant.PROFILE_IMAGE,"").isEmpty())
         {
             String image_url = DataPrefrence.getPref(context, Constant.PROFILE_IMAGE, "");
-            Picasso.with(context).load(image_url).memoryPolicy(MemoryPolicy.NO_CACHE)
-                    .networkPolicy(NetworkPolicy.NO_CACHE).placeholder(R.mipmap.profile_pic).into(imgProfile);
+//            Picasso.with(context).load(image_url).memoryPolicy(MemoryPolicy.NO_CACHE)
+//                    .networkPolicy(NetworkPolicy.NO_CACHE).placeholder(R.mipmap.profile_pic).into(imgProfile);
+
+            Glide.with(context)
+                    .load(image_url)
+                    .placeholder(R.mipmap.profile_icon)
+                    .error(R.mipmap.profile_icon)
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                    .into(imgProfile);
+
         }
 
        edt_name.setText(user_name);
@@ -217,6 +227,7 @@ public class ProfileUpdateActivity extends BaseActivity implements View.OnClickL
                 public void onSuccess(JSONObject js, String success) {
                     dismiss_loading();
                     showToast(success);
+                    DataPrefrence.setPref(context,Constant.EMAILID,edt_email.getText().toString());
                     Intent intent = new Intent(context, LawyerLandingActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
@@ -317,7 +328,7 @@ public class ProfileUpdateActivity extends BaseActivity implements View.OnClickL
                                 imgProfile.setImageBitmap(myBitmap);
 
                             }
-                            callUpdateProfile(file);
+//                            callUpdateProfile(file);
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
@@ -610,5 +621,8 @@ public class ProfileUpdateActivity extends BaseActivity implements View.OnClickL
         return file;
     }
 
-
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 }

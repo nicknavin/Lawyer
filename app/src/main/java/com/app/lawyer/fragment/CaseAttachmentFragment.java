@@ -1,6 +1,7 @@
 package com.app.lawyer.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -16,10 +17,12 @@ import android.webkit.WebViewClient;
 import android.widget.Spinner;
 
 import com.app.lawyer.R;
+import com.app.lawyer.activity.ShowAttachmentActivity;
 import com.app.lawyer.adapter.CaseAttachmentAdapter;
 import com.app.lawyer.api.BaseAsych;
 import com.app.lawyer.api.Urls;
 import com.app.lawyer.customview.CustomImageView;
+import com.app.lawyer.interfaces.ApiCallback;
 import com.app.lawyer.interfaces.RequestCallback;
 import com.app.lawyer.pojo.CaseDetail;
 import com.app.lawyer.pojo.CaseDocs;
@@ -164,7 +167,14 @@ public class CaseAttachmentFragment extends BaseFragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         if (caseDocsArrayList!=null) {
-            CaseAttachmentAdapter caseAttachmentAdapter=new CaseAttachmentAdapter(getContext(),caseDocsArrayList);
+            CaseAttachmentAdapter caseAttachmentAdapter=new CaseAttachmentAdapter(getContext(),caseDocsArrayList, new ApiCallback() {
+                @Override
+                public void result(String x) {
+                    Intent intent=new Intent(context, ShowAttachmentActivity.class);
+                    intent.putExtra("URL",x);
+                    startActivity(intent);
+                }
+            });
             recyclerView.setAdapter(caseAttachmentAdapter);
         }
 

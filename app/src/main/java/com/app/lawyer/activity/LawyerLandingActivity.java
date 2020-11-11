@@ -3,6 +3,7 @@ package com.app.lawyer.activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -38,7 +39,6 @@ public class LawyerLandingActivity extends BaseActivity implements View.OnClickL
     private DrawerLayout mDrawerLayout;
     CustomTextView tv_DrawerName, tv_email, drawer_btn_client_cases, drawer_btn_hearing_staff, drawer_Profile, drawer_change_pwd, drawer_logout, drawer_btn_myRoll;
     CustomTextView drawer_customer_care, drawer_invite_friends, drawer_feedback,drawerSetting;
-
     ImageView imgmenu;
     CircleImageView drawer_prof_img;
 
@@ -50,22 +50,38 @@ public class LawyerLandingActivity extends BaseActivity implements View.OnClickL
     }
 
     public void openLeft() {
-        if (mDrawerLayout.isDrawerOpen(Gravity.RIGHT)) {
-            mDrawerLayout.closeDrawer(Gravity.RIGHT);
-        }
-        if (mDrawerLayout.isDrawerOpen(Gravity.LEFT)) {
-            mDrawerLayout.closeDrawer(Gravity.LEFT);
-        } else {
-            if(lang.equals("ar")) {
-                mDrawerLayout.openDrawer(Gravity.RIGHT);
-            }
-            else
-            {
-                mDrawerLayout.openDrawer(Gravity.LEFT);
-            }
-        }
-//        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-//        drawer.closeDrawer(GravityCompat.START);
+
+
+                if(lang.toLowerCase().equals("ar"))
+                {
+                    if (mDrawerLayout.isDrawerOpen(Gravity.LEFT)) {
+                        mDrawerLayout.closeDrawer(Gravity.LEFT);
+                    }
+                    if (mDrawerLayout.isDrawerOpen(Gravity.RIGHT)) {
+                        mDrawerLayout.closeDrawer(Gravity.RIGHT);
+
+
+                    } else {
+                        mDrawerLayout.openDrawer(Gravity.RIGHT);
+
+                    }
+
+                }
+                else if(lang.toLowerCase().equals("en")||lang.toLowerCase().equals(""))
+                {
+                    if (mDrawerLayout.isDrawerOpen(Gravity.RIGHT)) {
+                        mDrawerLayout.closeDrawer(Gravity.RIGHT);
+                    }
+                    if (mDrawerLayout.isDrawerOpen(Gravity.LEFT)) {
+                        mDrawerLayout.closeDrawer(Gravity.LEFT);
+
+
+                    } else {
+                        mDrawerLayout.openDrawer(Gravity.LEFT);
+
+                    }
+                }
+
     }
 
     public void initView() {
@@ -103,6 +119,8 @@ public class LawyerLandingActivity extends BaseActivity implements View.OnClickL
         if (user_type_cd.equals("1")) {
           //  getUserData();
             drawer_btn_client_cases.setVisibility(View.GONE);
+            tv_email.setText("");
+            tv_DrawerName.setText(DataPrefrence.getPref(context, Constant.USER_NAME,""));
             ((CustomTextView) findViewById(R.id.toolbar_header)).setText(context.getResources().getString(R.string.menu_roll));
             MyRoleFragment myRoleFragment = new MyRoleFragment();
             displayFragment(myRoleFragment);
@@ -162,8 +180,8 @@ public class LawyerLandingActivity extends BaseActivity implements View.OnClickL
                 displayFragment(new ClientCaseFragment());
                 break;
             case R.id.drawerSetting:
-                //intent=new Intent(context,SettingActivity.class);
-                //startActivity(intent);
+                intent=new Intent(context,SettingActivity.class);
+                startActivity(intent);
                 break;
         }
         openLeft();

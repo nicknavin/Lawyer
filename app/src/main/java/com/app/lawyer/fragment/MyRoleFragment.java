@@ -174,6 +174,12 @@ public class MyRoleFragment extends BaseFragment {
         });
         list_menu.setGroupIndicator(null);
 
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
         getUserRole();
     }
 

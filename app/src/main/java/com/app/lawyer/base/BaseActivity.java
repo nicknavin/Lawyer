@@ -63,7 +63,7 @@ public class BaseActivity extends AppCompatActivity {
         user_name= DataPrefrence.getPref(context, Constant.USER_NAME,"");
         company_cd= DataPrefrence.getPref(context, Constant.COMPANY_CD,"");
        // lang = DataPrefrence.getPref(context, Constant.LANG_SELECTION, "");
-        lang="EN";
+        lang=DataPrefrence.getPref(context,Constant.LANG_SELECTION,"");
         startTransition();
 
          }

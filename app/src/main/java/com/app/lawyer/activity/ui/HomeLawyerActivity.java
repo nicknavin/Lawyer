@@ -1,5 +1,6 @@
 package com.app.lawyer.activity.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.app.lawyer.R;
+import com.app.lawyer.activity.HearingSessionCreateFormActivity;
 import com.app.lawyer.api.Urls;
 import com.app.lawyer.base.BaseActivity;
 import com.app.lawyer.customview.CustomTextView;
@@ -85,7 +87,9 @@ FloatingActionButton fab;
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent=new Intent(context, HearingSessionCreateFormActivity.class);
+                intent.putExtra("DATA",caseDetail);
+                startActivity(intent);
             }
         });
         getAttachment();

@@ -34,7 +34,7 @@ android:layout_centerInParent="true"
                 android:layout_height="120dp"
                 android:layout_gravity="center"
 
-                android:src="@mipmap/profile_pic"
+                android:src="@mipmap/profile_icon"
                 app:border_color="@color/colorAccent"
                 app:border_width="1dp" />
 

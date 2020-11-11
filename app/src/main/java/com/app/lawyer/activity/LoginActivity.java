@@ -20,6 +20,7 @@ import com.app.lawyer.customview.CustomTextView;
 import com.app.lawyer.interfaces.RequestCallback;
 import com.app.lawyer.utility.Constant;
 import com.app.lawyer.utility.DataPrefrence;
+import com.app.lawyer.utility.Utility;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -102,32 +103,44 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 //
 //
 
-        indicator.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        indicator.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked)
+            public void onClick(View view) {
+               CheckBox checkBox= (CheckBox) view;
+                if(checkBox.isChecked())
                 {
-//                    lang="ar";
+                    lang="ar";
 //                    LocaleManager.setNewLocale(context,lang);
-//                    Utility.setLang(context, lang);
+                    pageRefersh(lang);
 //
                 }
                 else
                 {
-  //                  lang="en";
-//                    LocaleManager.setNewLocale(context,lang);
-//                    Utility.setLang(context, lang);
+                    lang="en";
+                    pageRefersh(lang);
                 }
-//                DataPrefrence.setPref(context,Constant.LANG_SELECTION,lang);
-//                Utility.setLang(context, lang);
-//                Utility.setSystemLang(getApplicationContext());
-//                Intent refresh = new Intent(context, LoginActivity.class);
-//                refresh.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-//                startActivity(refresh);
+//
             }
+
         });
 
 
+
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        String lang = DataPrefrence.getPref(context, Constant.LANG_SELECTION, "");
+        if (lang.equals("en") || lang.isEmpty())
+        {
+
+            indicator.setChecked(false);
+
+        } else {
+            indicator.setChecked(true);
+        }
     }
 
     private boolean validation() {
@@ -285,5 +298,24 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     }
 
 
+    private void pageRefersh(String lang) {
+//        if (lang.equals("en")) {
+//            checkBoxArab.setChecked(false);
+//
+//        } else if (lang.equals("hi")) {
+//
+//            checkBoxEng.setChecked(false);
+//        }
 
+        DataPrefrence.setPref(context, Constant.LANG_SELECTION, lang);
+        Utility.setLang(context, lang);
+        Intent refresh=null;
+
+            refresh = new Intent(getApplicationContext(), LoginActivity.class);
+
+        refresh.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+
+        startActivity(refresh);
+        finish();
+    }
 }

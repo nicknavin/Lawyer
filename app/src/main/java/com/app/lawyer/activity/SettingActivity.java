@@ -28,7 +28,7 @@ public class SettingActivity extends AppCompatActivity implements View.OnClickLi
 
     CustomTextView tvEngish, tvArab;
     CheckBox checkBoxEng, checkBoxArab;
-String type="";
+    String type="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,7 +97,7 @@ String type="";
                 } else {
 
                     checkBoxArab.setChecked(true);
-                    pageRefersh("hi");
+                    pageRefersh("ar");
 //                    finish();
 //                    startActivity(getIntent());
                 }
@@ -108,7 +108,7 @@ String type="";
 
 
                     checkBoxEng.setChecked(false);
-                    pageRefersh("hi");
+                    pageRefersh("ar");
                     //  finish();
                     //  startActivity(getIntent());
 

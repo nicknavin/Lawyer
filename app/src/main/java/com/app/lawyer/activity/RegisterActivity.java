@@ -122,7 +122,7 @@ public class RegisterActivity extends BaseActivity {
 
                     try {
 
-                        JSONObject jsonObject = js.getJSONObject("resulst");
+                        JSONObject jsonObject = js.getJSONObject("result");
                         if (jsonObject.getString("rdescription").equals("success")) {
                             JSONObject userObj = js.getJSONObject("user");
                             String branch_no = userObj.getString("branch_cd");

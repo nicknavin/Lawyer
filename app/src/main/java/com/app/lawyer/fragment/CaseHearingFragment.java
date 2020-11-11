@@ -104,7 +104,7 @@ public class CaseHearingFragment extends Fragment {
                 public void onSuccess(JSONObject js, String success) {
                    // dismiss_loading();
                    // showToast(success);
-
+                    getActivity().finish();
                 }
 
                 @Override

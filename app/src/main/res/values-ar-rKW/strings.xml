@@ -134,5 +134,12 @@
         <!--        <item>Malaysia</item>-->
         <!--        <item>United States</item>-->
     </string-array>
-
+    <string name="title_activity_home_lawyer">HomeLawyerActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="hearings">Hearings</string>
+    <string name="remarks">Remarks</string>
+    <string name="Attachment">Attachment</string>
+    <string name="laywer_symbol">i</string>
+    <string name="discription">Description</string>
 </resources>

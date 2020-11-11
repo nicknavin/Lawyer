@@ -110,11 +110,26 @@ public class AtornyCaseProgressNewAdapter extends RecyclerView.Adapter<AtornyCas
         });
 
 
-        if (dayinterval_cd.equals("1") || dayinterval_cd.equals("-1")) {
+        if(position!=0)
+        {
+            holder.layCourt.setVisibility(View.GONE);
+            holder.layFloor.setVisibility(View.GONE);
+            holder.layRoom.setVisibility(View.GONE);
+            holder.layTime.setVisibility(View.GONE);
+        }
+
+
+        if (dayinterval_cd.equals("1") || dayinterval_cd.equals("-1"))
+        {
             holder.edt_comment.setText(detail.getComment());
 
             if (position == 0) {
                 holder.lay_comment_judgment.setVisibility(View.VISIBLE);
+            }
+            else
+            {
+                holder.lay_comment_judgment.setVisibility(View.GONE );
+
             }
 
             holder.spinner_judgment.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -178,6 +193,9 @@ public class AtornyCaseProgressNewAdapter extends RecyclerView.Adapter<AtornyCas
         CheckBox indicator;
         LinearLayout lay_comment_judgment;
         ExpandableLinearLayout expandableView;
+
+        LinearLayout layCourt,layTime,layFloor,layRoom;
+
         ExpandListener expandListener = new ExpandListener() {
             @Override
             public void onExpandComplete() {
@@ -201,6 +219,11 @@ public class AtornyCaseProgressNewAdapter extends RecyclerView.Adapter<AtornyCas
 
         public ViewHolder(View view) {
             super(view);
+            layCourt   =(LinearLayout)view.findViewById(R.id.layCourt);
+            layTime   =(LinearLayout)view.findViewById(R.id.layTime);
+            layFloor   =(LinearLayout)view.findViewById(R.id.layFloor);
+            layRoom   =(LinearLayout)view.findViewById(R.id.layRoom);
+
             indicator = (CheckBox) view.findViewById(R.id.indicator);
             txt_date = (CustomTextView) view.findViewById(R.id.txt_date);
             txt_judgement_header = (CustomTextView) view.findViewById(R.id.txt_judgement_header);

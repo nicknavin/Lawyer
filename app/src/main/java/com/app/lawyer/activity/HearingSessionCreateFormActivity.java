@@ -37,6 +37,7 @@ public class HearingSessionCreateFormActivity extends BaseActivity implements Vi
     CustomEditText edt_floor_number,edt_room_number;
     private int mYear, mMonth, mDay;
     String court_cd="",level_cd="",level_type_cd="",progres_ser_no="1";
+    String date="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,7 +75,12 @@ public class HearingSessionCreateFormActivity extends BaseActivity implements Vi
         courtAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_court.setAdapter(courtAdapter);
 
-        final ArrayList<CommanData> levelList= DataPrefrence.getObject(context, Constant.COURT_LEVEL_DATA);
+        final ArrayList<CommanData> demo= DataPrefrence.getObject(context, Constant.COURT_LEVEL_DATA);
+
+        ArrayList<CommanData> levelList=new ArrayList<>();
+        levelList.add(demo.get(0));
+
+
         ArrayAdapter<CommanData> levelAdapter = new ArrayAdapter<CommanData>(context, R.layout.custom_spinner_layout, levelList);
         levelAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_level.setAdapter(levelAdapter);
@@ -155,7 +161,8 @@ public class HearingSessionCreateFormActivity extends BaseActivity implements Vi
                     public void onDateSet(DatePicker view, int year,
                                           int monthOfYear, int dayOfMonth) {
 
-                        txt_date.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
+                        txt_date.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
+                        date=(monthOfYear + 1) + "/" +dayOfMonth + "/" +  year;
 
                     }
                 }, mYear, mMonth, mDay);
@@ -261,8 +268,8 @@ public class HearingSessionCreateFormActivity extends BaseActivity implements Vi
         params.put("user_cd", userId);
         params.put("case_cd", caseDetail.getCase_cd());
         params.put("progres_ser_no",progres_ser_no);
-        params.put("branch_cd","1-1");
-        params.put("court_date", txt_date.getText().toString());
+        params.put("branch_cd",DataPrefrence.getPref(context,Constant.BRANCH_NO,""));
+        params.put("court_date", date);
         params.put("level_cd", level_cd);
         params.put("level_type_cd", level_type_cd);
         params.put("court_cd", court_cd);
@@ -288,7 +295,7 @@ public class HearingSessionCreateFormActivity extends BaseActivity implements Vi
                 public void onSuccess(JSONObject js, String success)
                 {
                     dismiss_loading();
-
+                   finish();
                 }
 
                 @Override
@@ -328,8 +335,8 @@ public class HearingSessionCreateFormActivity extends BaseActivity implements Vi
             objemp.put("actioncode", "insert");
             objemp.put("case_cd", caseDetail.getCase_cd());
             objemp.put("progres_ser_no",progres_ser_no);
-            objemp.put("branch_cd","1-1");
-            objemp.put("court_date", txt_date.getText().toString());
+            objemp.put("branch_cd",DataPrefrence.getPref(context,Constant.BRANCH_NO,""));
+            objemp.put("court_date", date);
             objemp.put("level_cd", level_cd);
             objemp.put("level_type_cd", level_type_cd);
             objemp.put("court_cd", court_cd);
