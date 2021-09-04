@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/lay_lin"
-
+    android:background="@drawable/case_box_new"
     android:orientation="vertical">
 
     <LinearLayout
@@ -17,19 +17,17 @@
         android:orientation="horizontal"
         android:weightSum="2">
 
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
             android:id="@+id/txt_subject"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/subject"
-            android:textColor="@color/black"
-
-
+            android:textColor="@color/red"
             android:textSize="14sp"
-            app:edittextfont="OpenSans-Regular.ttf" />
+            app:edittextfont="OpenSans-Bold.ttf" />
 
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
             android:id="@+id/txt_status"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -37,15 +35,16 @@
 
             android:text=""
             android:layout_marginLeft="10dp"
-            android:textColor="@color/black"
+            android:textColor="@color/red"
             android:textSize="14sp"
 
-            app:edittextfont="OpenSans-Regular.ttf" />
+            app:edittextfont="OpenSans-Bold.ttf" />
     </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginRight="15dp"
         android:layout_marginLeft="15dp"
+        android:visibility="gone"
         android:background="@color/gray"></View>
 </LinearLayout>

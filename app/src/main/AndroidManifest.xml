@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.app.lawyer">
+    package="com.app.amanrow">
 
     <application
         android:allowBackup="true"
@@ -10,26 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.ShowAttachmentActivity"></activity>
-        <activity android:name=".activity.ui.HomeLawyerActivity" />
-        <activity android:name=".activity.HearingSessionCreateFormActivity" />
-        <activity android:name=".activity.AtornyCreateHearingSessionActivity" />
-        <activity android:name=".activity.ClientCaseSubjectDetailActivity" />
-        <activity android:name=".activity.ClientCaseHearingDateActivity" />
-        <activity android:name=".activity.ClientCaseDetailActivity" />
-        <activity android:name=".activity.ClientCasesListActivity" />
-        <activity android:name=".activity.RegisterActivity" />
-        <activity android:name=".activity.OTPActivity" />
+        <activity android:name="com.app.amanrow.activity.ui.HomeCaseActivity"></activity>
+        <activity android:name="com.app.amanrow.activity.ShowAttachmentActivity" />
+        <activity android:name="com.app.amanrow.activity.ui.HomeLawyerActivity" />
+        <activity android:name="com.app.amanrow.activity.HearingSessionCreateFormActivity" />
+        <activity android:name="com.app.amanrow.activity.AtornyCreateHearingSessionActivity" />
+        <activity android:name="com.app.amanrow.activity.ClientCaseSubjectDetailActivity" />
+        <activity android:name="com.app.amanrow.activity.ClientCaseHearingDateActivity" />
+        <activity android:name="com.app.amanrow.activity.ClientCaseDetailActivity" />
+        <activity android:name="com.app.amanrow.activity.ClientCasesListActivity" />
+        <activity android:name="com.app.amanrow.activity.RegisterActivity" />
+        <activity android:name="com.app.amanrow.activity.OTPActivity" />
         <activity
-            android:name=".activity.AtornyCaseProgressActivity"
+            android:name="com.app.amanrow.activity.AtornyCaseProgressActivity"
             android:windowSoftInputMode="adjustPan|adjustNothing" />
-        <activity android:name=".activity.HearingStaffDetailActivity" />
-        <activity android:name=".activity.HearingStaffActivity" />
-        <activity android:name=".activity.CaseDetailActivity" />
-        <activity android:name=".activity.MyRollActivity" />
-        <activity android:name=".activity.LawyerLandingActivity" />
-        <activity android:name=".activity.SettingActivity" />
-        <activity android:name=".activity.SplashActivity">
+        <activity android:name="com.app.amanrow.activity.HearingStaffDetailActivity" />
+        <activity android:name="com.app.amanrow.activity.HearingStaffActivity" />
+        <activity android:name="com.app.amanrow.activity.CaseDetailActivity" />
+        <activity android:name="com.app.amanrow.activity.MyRollActivity" />
+        <activity android:name="com.app.amanrow.activity.LawyerLandingActivity" />
+        <activity android:name="com.app.amanrow.activity.SettingActivity" />
+        <activity android:name="com.app.amanrow.activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,18 +41,18 @@
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity
-            android:name=".activity.LoginActivity"
+            android:name="com.app.amanrow.activity.LoginActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|adjustNothing" />
         <activity
-            android:name=".activity.ProfileUpdateActivity"
+            android:name="com.app.amanrow.activity.ProfileUpdateActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".activity.HomeActivity"
+            android:name="com.app.amanrow.activity.HomeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.ChangePasswordActivity"
+            android:name="com.app.amanrow.activity.ChangePasswordActivity"
             android:screenOrientation="portrait" />
 
         <provider
@@ -64,13 +65,15 @@
                 android:resource="@xml/provider_paths" />
         </provider>
     </application>
-    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
 
 </manifest>

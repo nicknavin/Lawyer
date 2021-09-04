@@ -8,7 +8,7 @@
     android:orientation="vertical"
     >
 <include layout="@layout/toolbar_default"/>
-    <com.app.lawyer.customview.CustomTextView
+    <com.app.amanrow.customview.CustomTextView
 android:id="@+id/txt_case_subject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@ android:id="@+id/txt_case_subject"
         android:orientation="horizontal"
         android:weightSum="4">
 
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
 
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@ android:gravity="center"
             app:edittextfont="OpenSans-Bold.ttf"
             />
 
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
 
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -48,7 +48,7 @@ android:gravity="center"
             android:gravity="center"
             android:textColor="@color/black" />
 
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
 
             android:layout_width="0dp"
             app:edittextfont="OpenSans-Bold.ttf"
@@ -58,7 +58,7 @@ android:gravity="center"
             android:text="@string/building"
             android:textColor="@color/black" />
 
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
 
             android:layout_width="0dp"
             android:layout_height="wrap_content"

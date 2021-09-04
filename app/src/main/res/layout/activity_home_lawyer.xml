@@ -19,7 +19,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
       >
-
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
             style="@style/Widget.Design.TabLayout"
@@ -27,12 +26,17 @@
             android:layout_centerHorizontal="true"
             android:layout_height="wrap_content"
             app:tabGravity="center"
-            app:tabIndicatorHeight="5dp"
-            android:background="#f0f0f0"
+            app:tabIndicatorHeight="4dp"
+            android:background="@color/colorPrimary"
             app:tabMode="scrollable"
+            android:elevation="15dp"
+            android:splitMotionEvents="true"
+            android:animateLayoutChanges="true"
+            app:tabUnboundedRipple="true"
+
             app:tabSelectedTextColor="@color/colorPrimaryDark"
             app:tabIndicatorColor="@color/white"
-            />
+/>
 
 
         <androidx.viewpager.widget.ViewPager
@@ -42,22 +46,24 @@
          />
 
     </LinearLayout>
+
         <RelativeLayout
+            android:id="@+id/layFab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true">
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+            >
+        <ImageView
             android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:rippleColor="@color/btn_color"
-            android:clickable="true"
-            android:src="@mipmap/add"
-            android:tint="@color/white"
-            android:visibility="gone"
-            android:layout_margin="20dp"
-             />
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/plus_add"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"/>
         </RelativeLayout>
+
     </RelativeLayout>
 </LinearLayout>

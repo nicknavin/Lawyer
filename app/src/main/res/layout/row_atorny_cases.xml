@@ -3,20 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="10dp"
+    android:layout_marginTop="5dp"
     >
 
     <LinearLayout
+        android:id="@+id/layCase"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/case_box"
+        android:background="@drawable/case_box_new"
         android:orientation="vertical"
         >
 
         <RelativeLayout
+            android:id="@+id/layHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#f6f6f6"
+
             android:layout_marginTop="1dp"
             android:layout_marginLeft="1dp"
             android:layout_marginRight="1dp"
@@ -27,7 +29,7 @@
 
 
 
-                <com.app.lawyer.customview.CustomTextView
+                <com.app.amanrow.customview.CustomTextView
                     android:id="@+id/txt_case_header"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -38,12 +40,9 @@
                     android:gravity="left"
                     android:layout_alignParentLeft="true"
                     android:text="@string/judgment"
-                    android:textColor="@color/txt_header"
-                    android:textSize="14sp"
-                    app:edittextfont="OpenSans-Regular.ttf" />
-
-
-
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    app:edittextfont="OpenSans-Bold.ttf" />
 
             <CheckBox
                 android:id="@+id/indicator"
@@ -57,7 +56,7 @@
                 android:button="@drawable/arrow_toggle"
                 android:checked="false"
                 android:clickable="false"
-                android:gravity="right" />
+                android:gravity="center" />
         </RelativeLayout>
         <View
             android:layout_width="match_parent"
@@ -66,10 +65,9 @@
 
 
 
-        <com.app.lawyer.customview.ExpandableLinearLayout
+        <com.app.amanrow.customview.ExpandableLinearLayout
             android:id="@+id/expandableView"
             android:layout_width="match_parent"
-
             android:layout_height="wrap_content"
             app:expandDuration="500">
 
@@ -78,6 +76,6 @@
             android:layout_width="match_parent"
             android:layout_margin="2dp"
             android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
-        </com.app.lawyer.customview.ExpandableLinearLayout>
+        </com.app.amanrow.customview.ExpandableLinearLayout>
     </LinearLayout>
 </LinearLayout>

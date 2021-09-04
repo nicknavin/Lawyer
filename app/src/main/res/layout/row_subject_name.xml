@@ -16,7 +16,7 @@
             android:layout_margin="10dp"
             android:orientation="vertical">
 
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:id="@+id/txt_laywer_office"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
                 android:layout_height="1dp"
                 android:background="@color/gray" />
 
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:id="@+id/txt_court_lavel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/gray" />
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:id="@+id/txt_case_no"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/gray" />
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:id="@+id/txt_moj_no"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
                 android:layout_height="1dp"
                 android:background="@color/gray" />
 
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:id="@+id/txt_status"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

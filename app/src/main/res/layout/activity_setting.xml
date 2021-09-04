@@ -9,22 +9,20 @@
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toolbar_default"></include>
+        layout="@layout/toolbar_default"/>
 
-    <com.app.lawyer.customview.CustomTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-    <com.app.lawyer.customview.CustomTextView
+
+    <com.app.amanrow.customview.CustomTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
-        android:text="@string/langSetting"
+        android:text="@string/lang_selection"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:edittextfont="FuturaNDSCOsF_Bold.ttf" />
+        app:edittextfont="OpenSans-Bold.ttf" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,22 +30,22 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:orientation="horizontal"
-        android:weightSum="2">
+        android:weightSum="2"
+        android:visibility="gone">
 
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
             android:id="@+id/tvEngish"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.5"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-
+            android:layout_gravity="center"
             android:text="@string/english"
             android:textColor="@color/gray"
             android:textSize="15sp"
-
-
-            app:edittextfont="GalanoClassic_SemiBold.ttf" />
+           app:edittextfont="OpenSans-Bold.ttf"
+            />
         <CheckBox
             android:id="@+id/checkEnglish"
             android:layout_width="0dp"
@@ -59,12 +57,45 @@
             />
     </LinearLayout>
 
-    <View
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@color/gray"></View>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.app.amanrow.customview.CustomTextView
+            android:id="@+id/btn_english"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/english"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf" />
+
+        <CheckBox
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/lang_toggle" />
+
+        <com.app.amanrow.customview.CustomTextView
+            android:id="@+id/btn_arabic"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/arabic"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:edittextfont="OpenSans-Regular.ttf" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -72,9 +103,10 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:orientation="horizontal"
-        android:weightSum="2">
+        android:weightSum="2"
+        android:visibility="gone">
 
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
             android:id="@+id/tvArab"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -86,8 +118,8 @@
             android:textSize="15sp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-
-            app:edittextfont="GalanoClassic_SemiBold.ttf" />
+android:layout_gravity="center"
+            app:edittextfont="OpenSans-Bold.ttf" />
         <CheckBox
             android:id="@+id/checkArab"
             android:layout_width="0dp"

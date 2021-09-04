@@ -6,7 +6,6 @@
     android:layout_height="wrap_content"
     android:src="@mipmap/aaaa"
     android:clickable="false"
-
     android:layout_gravity="center"
     android:gravity="center"
     />

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:layoutDirection="rtl"
     tools:context=".activity.OTPActivity">
 
     <ScrollView
@@ -17,7 +17,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <com.app.lawyer.customview.CircleImageView
+            <com.app.amanrow.customview.CircleImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="40dp"
@@ -49,7 +49,7 @@
                     android:background="@mipmap/blue"
                     android:orientation="vertical">
 
-                    <com.app.lawyer.customview.CustomTextView
+                    <com.app.amanrow.customview.CustomTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -78,7 +78,7 @@
                     android:background="@mipmap/blue"
                     android:orientation="vertical">
 
-                    <com.app.lawyer.customview.CustomTextView
+                    <com.app.amanrow.customview.CustomTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -102,7 +102,7 @@
 
             </LinearLayout>
 
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -116,9 +116,33 @@
 
                 app:edittextfont="OpenSans-Regular.ttf" />
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LoginTextInputLayoutStyle"
+                app:errorEnabled="true"
+                android:hint="@string/code"
 
-            <com.app.lawyer.customview.CustomEditText
-                android:id="@+id/edt_otp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.app.amanrow.customview.CustomEditText
+               android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginLeft="40dp"
@@ -136,7 +160,7 @@ android:layout_marginTop="20dp"
                 app:edittextfontHint="OpenSans-Regular.ttf"
                 />
 
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:id="@+id/btn_submit"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -151,7 +175,7 @@ android:layout_marginTop="20dp"
                 android:textSize="16sp"
                 app:edittextfont="OpenSans-Regular.ttf" />
 
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -163,7 +187,7 @@ android:layout_marginTop="20dp"
                 android:visibility="gone"
                 app:edittextfont="OpenSans-Bold.ttf" />
 
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

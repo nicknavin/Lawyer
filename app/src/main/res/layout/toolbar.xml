@@ -26,10 +26,10 @@
             android:layout_centerVertical="true"
             android:padding="10dp"
 
-            android:src="@mipmap/back_black"
+            android:src="@mipmap/back"
             />
 
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
             android:id="@+id/toolbar_header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

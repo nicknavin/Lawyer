@@ -28,7 +28,7 @@ android:layout_centerInParent="true"
 
 
 
-            <com.app.lawyer.customview.CircleImageView
+            <com.app.amanrow.customview.CircleImageView
                 android:id="@+id/imgProfile"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -37,14 +37,51 @@ android:layout_centerInParent="true"
                 android:src="@mipmap/profile_icon"
                 app:border_color="@color/colorAccent"
                 app:border_width="1dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-            <com.app.lawyer.customview.CustomEditText
-                android:id="@+id/edt_email"
+                <com.app.amanrow.customview.CustomTextView
+                    android:id="@+id/btn_english"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/english"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:edittextfont="OpenSans-Regular.ttf" />
+
+                <CheckBox
+                    android:id="@+id/indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/lang_toggle" />
+
+                <com.app.amanrow.customview.CustomTextView
+                    android:id="@+id/btn_arabic"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/arabic"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:edittextfont="OpenSans-Regular.ttf" />
+            </LinearLayout>
+            <com.app.amanrow.customview.CustomEditText
+
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/edt_box"
-
+android:visibility="gone"
                 android:gravity="center|left"
                 android:hint="@string/hint_email"
                 android:padding="10dp"
@@ -53,8 +90,29 @@ android:layout_centerInParent="true"
                 android:textColorHint="@color/black"
                 app:edittextfont="OpenSans-Regular.ttf"
                 app:edittextfontHint="OpenSans-Regular.ttf" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LoginTextInputLayoutStyle"
+                app:errorEnabled="true"
+                android:layout_marginTop="20dp"
+                android:hint="@string/hint_email">
 
-            <com.app.lawyer.customview.CustomEditText
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.app.amanrow.customview.CustomEditText
                 android:id="@+id/edt_contact"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -69,14 +127,36 @@ android:layout_centerInParent="true"
                 app:edittextfont="OpenSans-Regular.ttf"
                 app:edittextfontHint="OpenSans-Regular.ttf" />
 
-            <com.app.lawyer.customview.CustomEditText
-                android:id="@+id/edt_name"
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LoginTextInputLayoutStyle"
+                app:errorEnabled="true"
+
+                android:hint="@string/hint_name" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="60"
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.app.amanrow.customview.CustomEditText
+               android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/edt_box"
                 android:padding="10dp"
-                android:gravity="center|left"
                 android:hint="@string/hint_name"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/black"
@@ -86,7 +166,7 @@ android:layout_centerInParent="true"
                 app:edittextfontHint="OpenSans-Regular.ttf" />
 
 
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:id="@+id/btn_update"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"

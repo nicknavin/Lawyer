@@ -137,8 +137,10 @@
     <string name="Attachment">Attachment</string>
     <string name="laywer_symbol">i</string>
     <string name="discription">Description</string>
+    <string name="lang_selection">Language Selection</string>
+    <string name="appversion">App Version 1.0 </string>
     <string-array name="judgment_str">
-        <!--        <item>Malaysia</item>-->
+                <item>Malaysia</item>
         <!--        <item>United States</item>-->
     </string-array>
 </resources>

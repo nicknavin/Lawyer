@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#FDFDFD"
+    android:layout_marginTop="40dp"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl">
+    <RelativeLayout
+        android:id="@+id/layImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circle_shadow"
+        app:layout_constraintEnd_toStartOf="@+id/lay"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+        <com.app.amanrow.customview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/profile_icon"
+            android:layout_centerInParent="true"
+
+            android:id="@+id/imgProfile"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/layImage"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <com.app.amanrow.customview.CustomTextView
+                android:id="@+id/txt_user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/textMSgTime"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:letterSpacing="0.04"
+                android:lineSpacingExtra="3sp"
+
+
+
+                android:text="hello"
+                android:textColor="#858585"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:edittextfont="HelveticaNeueMed.ttf"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/textMSgTime"
+                />
+            <com.app.amanrow.customview.CustomTextView
+                android:id="@+id/textMSgTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txt_user_name"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="15:dssss50"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:maxWidth="80dp"
+
+                android:textColor="#B2B2B2"
+                app:edittextfont="HelveticaNeueMed.ttf"
+                android:textStyle="normal"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </LinearLayout>
+    <com.app.amanrow.customview.CustomTextView
+        android:id="@+id/txt_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textDirection="locale"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layImage"
+        android:letterSpacing="0.04"
+        android:lineSpacingExtra="3sp"
+        android:paddingStart="9dp"
+        android:paddingLeft="9dp"
+
+        android:paddingTop="7dp"
+        android:paddingEnd="9dp"
+        android:paddingRight="9dp"
+        android:paddingBottom="7dp"
+        android:text="hello"
+        android:textColor="#777777"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:edittextfont="HelveticaNeueMed.ttf" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

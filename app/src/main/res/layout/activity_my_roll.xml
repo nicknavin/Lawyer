@@ -29,7 +29,7 @@
             android:layout_marginTop="5dp"
            />
 
-        <com.app.lawyer.customview.AnimatedExpandableListView
+        <com.app.amanrow.customview.AnimatedExpandableListView
             android:id="@+id/list_menu"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

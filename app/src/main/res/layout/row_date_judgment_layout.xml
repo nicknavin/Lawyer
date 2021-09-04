@@ -18,7 +18,7 @@
         android:orientation="horizontal"
         android:weightSum="5">
 
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
             android:id="@+id/txt_date"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
 
           android:src="@mipmap/line_icon"></ImageView>
 
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
             android:id="@+id/txt_judgement"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

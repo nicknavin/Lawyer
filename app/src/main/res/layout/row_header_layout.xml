@@ -11,7 +11,7 @@ android:background="@color/white"
         android:padding="10dp"
 
         android:orientation="horizontal">
-    <com.app.lawyer.customview.CustomTextView
+    <com.app.amanrow.customview.CustomTextView
         android:id="@+id/txt_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,7 +40,7 @@ android:background="@color/white"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:weightSum="6">
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
 
             android:layout_width="0dp"
             android:layout_weight="1.5"
@@ -52,7 +52,7 @@ android:background="@color/white"
             android:textSize="14sp"
              android:textColor="@color/gray_txt"
             app:edittextfont="OpenSans-Bold.ttf" />
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
 
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@ android:background="@color/white"
             android:textColor="@color/gray_txt"
             android:textSize="14sp"
             app:edittextfont="OpenSans-Bold.ttf" />
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
 
             android:layout_width="0dp"
             android:layout_height="wrap_content"

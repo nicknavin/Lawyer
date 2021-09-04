@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="start"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <LinearLayout
@@ -16,12 +17,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="#f4f4f4"
+            android:background="@color/colorPrimary_light"
             android:clickable="true"
             android:orientation="vertical">
 
 
-            <com.app.lawyer.customview.CircleImageView
+            <com.app.amanrow.customview.CircleImageView
                 android:id="@+id/drawer_prof_img"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -37,18 +38,18 @@
                 app:border_width="2dp" />
             <!--</RelativeLayout>-->
 
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:id="@+id/tv_DrawerName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Morcus Potter"
-                android:textColor="@color/black"
+                android:textColor="@color/tabs_white"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:edittextfont="OpenSans-Bold.ttf" />
 
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:id="@+id/tv_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -56,7 +57,7 @@
                 android:layout_marginBottom="20dp"
 
                 android:text="morcus.potter@gmail.com"
-                android:textColor="@color/black"
+                android:textColor="@color/tabs_white"
                 android:textSize="14sp"
                 app:edittextfont="OpenSans-Regular.ttf" />
 
@@ -75,7 +76,7 @@
 
                 android:orientation="vertical">
 
-                <com.app.lawyer.customview.CustomTextView
+                <com.app.amanrow.customview.CustomTextView
                     android:id="@+id/drawer_btn_client_cases"
                     style="@style/ButtonRippleStyle"
                     android:layout_width="match_parent"
@@ -83,6 +84,7 @@
 
                     android:drawablePadding="15dp"
                     android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:text="@string/Cases"
@@ -91,12 +93,12 @@
                     app:edittextfont="OpenSans-Regular.ttf"
                     app:edittextfontHint="OpenSans-Bold.ttf" />
 
-                <com.app.lawyer.customview.CustomTextView
+                <com.app.amanrow.customview.CustomTextView
                     android:id="@+id/drawer_btn_myRoll"
                     style="@style/ButtonRippleStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
+                    android:paddingRight="40dp"
                     android:drawablePadding="15dp"
                     android:paddingLeft="40dp"
                     android:paddingTop="15dp"
@@ -107,7 +109,7 @@
                     app:edittextfont="OpenSans-Regular.ttf"
                     app:edittextfontHint="OpenSans-Bold.ttf" />
 
-                <com.app.lawyer.customview.CustomTextView
+                <com.app.amanrow.customview.CustomTextView
                     android:id="@+id/drawer_btn_hearing_staff"
                     style="@style/ButtonRippleStyle"
                     android:layout_width="match_parent"
@@ -115,6 +117,7 @@
                     android:drawablePadding="15dp"
                     android:paddingLeft="40dp"
                     android:paddingTop="15dp"
+                    android:visibility="gone"
                     android:paddingBottom="15dp"
                     android:text="@string/menu_hearing_staff"
                     android:textColor="@color/black"
@@ -122,7 +125,7 @@
                     app:edittextfont="OpenSans-Regular.ttf"
                     app:edittextfontHint="OpenSans-Bold.ttf" />
 
-                <com.app.lawyer.customview.CustomTextView
+                <com.app.amanrow.customview.CustomTextView
                     android:id="@+id/drawer_lang_setting"
                     style="@style/ButtonRippleStyle"
                     android:layout_width="match_parent"
@@ -140,7 +143,7 @@
                     app:edittextfont="OPENSANS_BOLD.ttf" />
 
 
-                <com.app.lawyer.customview.CustomTextView
+                <com.app.amanrow.customview.CustomTextView
                     android:id="@+id/drawer_specification"
                     style="@style/ButtonRippleStyle"
                     android:layout_width="match_parent"
@@ -158,7 +161,7 @@
                     app:edittextfont="OPENSANS_BOLD.ttf" />
 
 
-                <com.app.lawyer.customview.CustomTextView
+                <com.app.amanrow.customview.CustomTextView
                     android:id="@+id/drawer_btn_clinic"
                     style="@style/ButtonRippleStyle"
                     android:layout_width="match_parent"
@@ -175,12 +178,12 @@
                     app:edittextfont="OPENSANS_BOLD.ttf" />
 
 
-                <com.app.lawyer.customview.CustomTextView
+                <com.app.amanrow.customview.CustomTextView
                     android:id="@+id/drawer_Profile"
                     style="@style/ButtonRippleStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
+                    android:paddingRight="40dp"
                     android:drawablePadding="15dp"
                     android:paddingLeft="40dp"
                     android:paddingTop="15dp"
@@ -190,12 +193,12 @@
                     android:textSize="16sp"
                     app:edittextfont="OPENSANS_BOLD.ttf" />
 
-                <com.app.lawyer.customview.CustomTextView
+                <com.app.amanrow.customview.CustomTextView
                     android:id="@+id/drawer_change_pwd"
                     style="@style/ButtonRippleStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
+                    android:paddingRight="40dp"
                     android:drawablePadding="15dp"
                     android:paddingLeft="40dp"
                     android:paddingTop="15dp"
@@ -206,14 +209,15 @@
                     app:edittextfont="OPENSANS_BOLD.ttf" />
 
 
-                <com.app.lawyer.customview.CustomTextView
+                <com.app.amanrow.customview.CustomTextView
                     android:id="@+id/drawerSetting"
                     style="@style/ButtonRippleStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
+                    android:paddingRight="40dp"
                     android:drawablePadding="15dp"
                     android:paddingLeft="40dp"
+                    android:visibility="gone"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:text="@string/action_settings"
@@ -223,53 +227,7 @@
                     app:edittextfont="OPENSANS_BOLD.ttf" />
 
 
-                <com.app.lawyer.customview.CustomTextView
-                    android:id="@+id/drawer_feedback"
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:drawablePadding="15dp"
-                    android:paddingLeft="40dp"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
-                    android:text="@string/menu_feedback"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:edittextfont="OPENSANS_BOLD.ttf" />
-
-
-                <com.app.lawyer.customview.CustomTextView
-                    android:id="@+id/drawer_invite_friends"
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:drawablePadding="15dp"
-                    android:paddingLeft="40dp"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
-                    android:text="@string/menu_share"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:edittextfont="OPENSANS_BOLD.ttf" />
-
-
-                <com.app.lawyer.customview.CustomTextView
-                    android:id="@+id/drawer_customer_care"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawablePadding="15dp"
-                    android:paddingLeft="40dp"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
-                    android:text="@string/menu_customercare"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:edittextfont="OPENSANS_BOLD.ttf" />
-
-
-                <com.app.lawyer.customview.CustomTextView
+                <com.app.amanrow.customview.CustomTextView
                     android:id="@+id/drawer_logout"
                     style="@style/ButtonRippleStyle"
                     android:layout_width="match_parent"
@@ -279,12 +237,25 @@
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:text="@string/logout"
-
+                    android:paddingRight="40dp"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:edittextfont="OPENSANS_BOLD.ttf" />
 
-
+                <com.app.amanrow.customview.CustomTextView
+                    android:id="@+id/txtAppVersion"
+                    style="@style/ButtonRippleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/appversion"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingRight="40dp"
+                    app:edittextfont="OPENSANS_BOLD.ttf" />
             </LinearLayout>
         </ScrollView>
 

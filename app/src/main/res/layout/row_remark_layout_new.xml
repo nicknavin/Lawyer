@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <com.app.amanrow.customview.CircleImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/profile_icon"
+        android:tint="#dddddd"
+        android:id="@+id/imgProfile"
+        app:layout_constraintEnd_toStartOf="@+id/lay"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgProfile"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/background_left">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.app.amanrow.customview.CustomTextView
+                android:id="@+id/txt_user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/textMSgTime"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:layout_marginLeft="5dp"
+                android:letterSpacing="0.04"
+                android:lineSpacingExtra="3sp"
+                android:paddingStart="9dp"
+                android:paddingLeft="9dp"
+
+                android:paddingTop="7dp"
+                android:paddingEnd="9dp"
+                android:paddingRight="9dp"
+                android:paddingBottom="7dp"
+                android:text="hello"
+                android:textColor="#767676"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:edittextfont="HelveticaNeueMed.ttf"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/textMSgTime"
+                />
+            <com.app.amanrow.customview.CustomTextView
+                android:id="@+id/textMSgTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txt_user_name"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="15:50"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:maxWidth="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#767676"
+                app:edittextfont="HelveticaNeueMed.ttf"
+                android:textStyle="normal"
+                android:paddingTop="7dp"
+                android:paddingBottom="3dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorPrimary_lights"></View>
+        <com.app.amanrow.customview.CustomTextView
+            android:id="@+id/txt_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textDirection="locale"
+            android:layout_marginLeft="5dp"
+            android:letterSpacing="0.04"
+            android:lineSpacingExtra="3sp"
+            android:paddingStart="9dp"
+            android:paddingLeft="9dp"
+
+            android:paddingTop="7dp"
+            android:paddingEnd="9dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="7dp"
+            android:text="hello"
+            android:textColor="#767676"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:edittextfont="HelveticaNeueMed.ttf" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

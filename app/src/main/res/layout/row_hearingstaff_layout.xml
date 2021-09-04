@@ -7,7 +7,7 @@
     android:id="@+id/lay_hearingstaff"
     android:layout_margin="5dp">
 
-    <com.app.lawyer.customview.CircleImageView
+    <com.app.amanrow.customview.CircleImageView
         android:id="@+id/imgProfile"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -23,7 +23,7 @@
         android:orientation="vertical"
         android:layout_marginTop="10dp">
 
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
             android:id="@+id/txt_user_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

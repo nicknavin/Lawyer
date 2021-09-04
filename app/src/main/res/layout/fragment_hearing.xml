@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.app.lawyer.customview.CustomEditText
+            <com.app.amanrow.customview.CustomEditText
                 android:id="@+id/edt_remark"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -62,7 +62,7 @@
                         android:orientation="horizontal"
                         android:padding="5dp">
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
 
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
                             android:textSize="14sp"
                             app:edittextfont="OpenSans-Regular.ttf" />
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:id="@+id/txt_case"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -91,7 +91,7 @@
                         android:padding="5dp"
                         android:orientation="horizontal">
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
 
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
                             android:textSize="14sp"
                             app:edittextfont="OpenSans-Regular.ttf" />
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:id="@+id/txt_case_subject"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -119,7 +119,7 @@
                         android:padding="5dp"
                         android:orientation="horizontal">
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="@string/client_name"
@@ -127,7 +127,7 @@
                             android:textSize="14sp"
                             app:edittextfont="OpenSans-Regular.ttf" />
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:id="@+id/txt_client_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -144,7 +144,7 @@
                         android:padding="5dp"
                         android:orientation="horizontal">
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="@string/opponent_name"
@@ -152,7 +152,7 @@
                             android:textSize="14sp"
                             app:edittextfont="OpenSans-Regular.ttf" />
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:id="@+id/txt_case_opponent_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -170,7 +170,7 @@
                         android:padding="5dp"
                         android:orientation="horizontal">
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="@string/case_numb"
@@ -178,7 +178,7 @@
                             android:textSize="14sp"
                             app:edittextfont="OpenSans-Regular.ttf" />
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:id="@+id/txt_case_number"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -195,7 +195,7 @@
                         android:padding="5dp"
                         android:orientation="horizontal">
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="@string/case_type"
@@ -203,7 +203,7 @@
                             android:textSize="14sp"
                             app:edittextfont="OpenSans-Regular.ttf" />
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:id="@+id/txt_case_type"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -220,7 +220,7 @@
                         android:padding="5dp"
                         android:orientation="horizontal">
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="@string/case_lawsuit"
@@ -228,7 +228,7 @@
                             android:textSize="14sp"
                             app:edittextfont="OpenSans-Regular.ttf" />
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:id="@+id/txt_case_lawsuit"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -245,7 +245,7 @@
                         android:padding="5dp"
                         android:orientation="horizontal">
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="@string/case_lavel"
@@ -253,7 +253,7 @@
                             android:textSize="14sp"
                             app:edittextfont="OpenSans-Regular.ttf" />
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:id="@+id/txt_case_lavel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -270,7 +270,7 @@
                         android:padding="5dp"
                         android:orientation="horizontal">
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="@string/case_defendant"
@@ -278,7 +278,7 @@
                             android:textSize="14sp"
                             app:edittextfont="OpenSans-Regular.ttf" />
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:id="@+id/txt_case_defendant"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -295,7 +295,7 @@
                         android:padding="5dp"
                         android:orientation="horizontal">
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="@string/case_plaintiff"
@@ -303,7 +303,7 @@
                             android:textSize="14sp"
                             app:edittextfont="OpenSans-Regular.ttf" />
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:id="@+id/txt_case_plaintiff"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -320,7 +320,7 @@
                         android:padding="5dp"
                         android:orientation="horizontal">
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="@string/court_name"
@@ -328,7 +328,7 @@
                             android:textSize="14sp"
                             app:edittextfont="OpenSans-Regular.ttf" />
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:id="@+id/txt_court_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -346,7 +346,7 @@
                         android:padding="5dp"
                         android:orientation="horizontal">
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="@string/court_location"
@@ -354,7 +354,7 @@
                             android:textSize="14sp"
                             app:edittextfont="OpenSans-Regular.ttf" />
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:id="@+id/txt_court_location"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -371,7 +371,7 @@
                         android:padding="5dp"
                         android:orientation="horizontal">
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="@string/progress_date"
@@ -379,7 +379,7 @@
                             android:textSize="14sp"
                             app:edittextfont="OpenSans-Regular.ttf" />
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:id="@+id/txt_progres_date"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -396,7 +396,7 @@
                         android:padding="5dp"
                         android:orientation="horizontal">
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="@string/progress_discription"
@@ -404,7 +404,7 @@
                             android:textSize="14sp"
                             app:edittextfont="OpenSans-Regular.ttf" />
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:id="@+id/txt_progres_description"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -422,7 +422,7 @@
                         android:padding="5dp"
                         android:orientation="horizontal">
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="@string/judgment"
@@ -430,7 +430,7 @@
                             android:textSize="14sp"
                             app:edittextfont="OpenSans-Regular.ttf" />
 
-                        <com.app.lawyer.customview.CustomTextView
+                        <com.app.amanrow.customview.CustomTextView
                             android:id="@+id/txt_judgment"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

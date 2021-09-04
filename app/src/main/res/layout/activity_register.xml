@@ -29,7 +29,7 @@
                 android:layout_marginTop="30dp"
                 android:background="@drawable/circle">
 
-                <com.app.lawyer.customview.CircleImageView
+                <com.app.amanrow.customview.CircleImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_centerInParent="true"
@@ -45,7 +45,7 @@
                 android:gravity="center"
                 android:orientation="horizontal" />
 
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -58,8 +58,8 @@
 
                 app:edittextfont="OpenSans-Regular.ttf" />
 
-            <com.app.lawyer.customview.CustomEditText
-                android:id="@+id/edt_username"
+            <com.app.amanrow.customview.CustomEditText
+             android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
@@ -76,14 +76,92 @@
                 android:textSize="16sp"
                 app:edittextfontHint="OpenSans-Regular.ttf"
                 app:edittextfont="OpenSans-Regular.ttf" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LoginTextInputLayoutStyle"
+                app:errorEnabled="true"
+                android:layout_marginTop="20dp"
+                android:hint="@string/user_name" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LoginTextInputLayoutStyle"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleDrawable="@drawable/eye_toggle"
+
+                android:hint="@string/user_pwd">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp"
+
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="20"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LoginTextInputLayoutStyle"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleDrawable="@drawable/eye_toggle"
+
+                android:hint="@string/user_pwd_cnfm_new">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_password_cnfm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="16sp"
+
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="20"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
 
-                <com.app.lawyer.customview.CustomEditText
-                    android:id="@+id/edt_password"
+                <com.app.amanrow.customview.CustomEditText
+
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="@drawable/edt_box"
@@ -119,10 +197,11 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
 
-                <com.app.lawyer.customview.CustomEditText
-                    android:id="@+id/edt_password_cnfm"
+                <com.app.amanrow.customview.CustomEditText
+
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="@drawable/edt_box"
@@ -153,7 +232,7 @@
                     android:gravity="center" />
             </RelativeLayout>
 
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:id="@+id/btn_submit"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -169,7 +248,7 @@
                 android:textSize="16sp"
                 app:edittextfont="OpenSans-Regular.ttf" />
 
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -180,7 +259,7 @@
 android:visibility="gone"
                 app:edittextfont="OpenSans-Regular.ttf" />
 
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -191,7 +270,7 @@ android:visibility="gone"
                 android:visibility="gone"
                 app:edittextfont="OpenSans-Regular.ttf" />
 
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:id="@+id/btn_login"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"

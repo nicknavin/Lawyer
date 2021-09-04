@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.ClientCaseFragment">
 
@@ -15,45 +16,56 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-          android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+
+                android:background="@drawable/case_box_new"
                 android:weightSum="2">
-                <com.app.lawyer.customview.CustomTextView
+                <com.app.amanrow.customview.CustomTextView
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="@string/subject"
-                    android:layout_marginLeft="10dp"
-                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
                     android:textSize="14sp"
-
+                    android:textStyle="bold"
+                    app:edittextfont="OpenSans-Bold.ttf"
                     android:textColor="@color/gray_txt"
-                    app:edittextfont="OpenSans-Bold.ttf"/>
-                <com.app.lawyer.customview.CustomTextView
+                    />
+                <com.app.amanrow.customview.CustomTextView
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="@string/status"
                     android:textStyle="bold"
-                    android:textSize="14sp"
+                    android:textSize="15sp"
                     android:gravity="left"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
                     android:layout_marginLeft="10dp"
                     android:textColor="@color/gray_txt"
                     app:edittextfont="OpenSans-Bold.ttf"/>
             </LinearLayout>
+
+
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginLeft="15dp"
+                android:visibility="gone"
                 android:layout_marginTop="10dp"
                 android:background="@color/gray"></View>
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/recycler_view"
-
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 />
         </LinearLayout>
 

@@ -19,7 +19,7 @@
         android:orientation="vertical">
 
 
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
             android:id="@+id/txt_date"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -80,7 +80,7 @@
             android:spinnerMode="dropdown"
 
             />
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
             android:id="@+id/txt_court_time"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -96,7 +96,7 @@
             android:textSize="16sp"
             app:edittextfont="OpenSans-Regular.ttf"
             app:edittextfontHint="OpenSans-Regular.ttf" />
-        <com.app.lawyer.customview.CustomEditText
+        <com.app.amanrow.customview.CustomEditText
 
             android:id="@+id/edt_floor_number"
             android:layout_width="match_parent"
@@ -113,7 +113,7 @@
             android:textSize="16sp"
             app:edittextfont="OpenSans-Regular.ttf"
             app:edittextfontHint="OpenSans-Regular.ttf" />
-        <com.app.lawyer.customview.CustomEditText
+        <com.app.amanrow.customview.CustomEditText
 
             android:id="@+id/edt_room_number"
             android:layout_width="match_parent"
@@ -131,7 +131,7 @@
             app:edittextfont="OpenSans-Regular.ttf"
             app:edittextfontHint="OpenSans-Regular.ttf" />
 
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
             android:id="@+id/btn_save"
             android:layout_width="match_parent"
             android:layout_height="40dp"

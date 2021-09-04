@@ -11,7 +11,7 @@
         android:padding="10dp"
         android:background="@drawable/edt_box"
         android:orientation="horizontal">
-    <com.app.lawyer.customview.CustomTextView
+    <com.app.amanrow.customview.CustomTextView
         android:id="@+id/txt_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

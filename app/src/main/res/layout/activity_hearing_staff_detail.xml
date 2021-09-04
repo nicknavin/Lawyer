@@ -13,20 +13,20 @@
         android:orientation="horizontal"
         android:weightSum="10"
         android:layout_marginTop="5dp">
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:gravity="center"
             android:layout_weight="2"
             android:text="@string/code"/>
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:layout_weight="4"
             android:text="@string/subject"/>
-        <com.app.lawyer.customview.CustomTextView
+        <com.app.amanrow.customview.CustomTextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textColor="@color/black"

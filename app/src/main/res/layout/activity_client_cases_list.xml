@@ -16,7 +16,7 @@
             android:orientation="horizontal"
             android:layout_marginTop="10dp"
             android:weightSum="2">
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
               android:layout_marginLeft="10dp"
                 android:textColor="@color/black"
                 app:edittextfont="OpenSans-Regular.ttf"/>
-            <com.app.lawyer.customview.CustomTextView
+            <com.app.amanrow.customview.CustomTextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
